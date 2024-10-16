@@ -1,0 +1,36 @@
+{
+  "name": "uuid-1line",
+  "version": "0.0.0-dev",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "npm run test:r",
+    "test:r": "node --experimental-transform-types --test src/*.spec.mts",
+    "test:w": "node --experimental-transform-types --test --watch src/*.spec.mts",
+    "test:cov": "node --experimental-transform-types --test --experimental-test-coverage src/*.spec.mts",
+    "prebuild": "rm -rf dist",
+    "build": "pkgroll --target=es2023"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.7.5",
+    "pkgroll": "^2.5.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.2",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3"
+  }
+}
