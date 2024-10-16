@@ -1,9 +1,11 @@
 # uuid-1line
 
-Generate uuid in one line
+Generate pseudo uuid in one line.
 
 ```ts
-
+'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replaceAll('x', () =>
+  Math.random().toString(16).at(3),
+);
 ```
 
 ## License
