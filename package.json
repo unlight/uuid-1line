@@ -40,6 +40,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^22.7.5",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "pkgroll": "^2.5.0",
     "prettier": "^3.3.3",
     "semantic-release": "^24.1.2",
