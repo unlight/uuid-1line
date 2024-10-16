@@ -3,6 +3,10 @@ on:
   - push
   - pull_request
 
+permissions:
+  contents: write
+  issues: read
+
 jobs:
   test:
     name: 'Test'
