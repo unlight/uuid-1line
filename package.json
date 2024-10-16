@@ -1,5 +1,6 @@
 {
   "name": "uuid-1line",
+  "description": "Generate pseudo uuid in one line.",
   "version": "0.0.0-dev",
   "license": "MIT",
   "type": "module",
@@ -15,6 +16,18 @@
       "require": "./dist/index.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlight/uuid-1line.git"
+  },
+  "keywords": [
+    "uuid",
+    "1liners"
+  ],
+  "bugs": {
+    "url": "https://github.com/unlight/uuid-1line/issues"
+  },
+  "homepage": "https://github.com/unlight/uuid-1line#readme",
   "scripts": {
     "test": "npm run test:r",
     "test:r": "node --experimental-transform-types --test src/*.spec.mts",
